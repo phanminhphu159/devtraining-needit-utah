@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Colors */
+$color-active-bg: #08a;
+$color-active-text: #fff;
+$color-heading-bg: #6ac;
+$color-heading-text: #fff;
+
+/* Breakpoints */
+$break-small: 480px;
+
+/* States */
+.active {
+  background: $color-active-bg;
+  color: $color-active-text;
+}
+
+/* Make the table pivot */
+@mixin pivot() {
+  flex-direction: column;
+}
+
+table.table {
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+table.table tbody {
+  flex: 1;
+}
+
+table.table thead,
+table.table tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+table.table thead tr,
+table.table tbody tr {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+table.table thead th {
+  background: $color-heading-bg;
+  color: $color-heading-text;
+}
+
+table.table thead th,
+table.table tbody td {
+  flex: 1;
+}
+
+/* Interactions */
+input.pivot {
+  display: none; /* hide the checkbox */
+}
+
+input.pivot:checked + .button {
+  background: $color-active-bg;
+  color: $color-active-text;
+}
+
+input.pivot:checked ~ table.is-pivotable,
+input.pivot:checked ~ * &gt; table.is-pivotable /* allow nesting */ {
+  @include pivot();
+  thead, tbody {
+    flex-direction: row;
+  }
+  tr {
+    flex-direction: column;
+  }
+  th, td {
+    transform-origin: top left;
+  }
+}
+
+/* Pivot on mobile */
+@media screen and (max-width: $break-small) {
+  table.table {
+    @include pivot();
+  }
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Pivot Chart Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-04 03:31:49</sys_created_on>
+        <sys_id>a5e0986247110210bf08f3f2e16d4316</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Pivot Chart Widget</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_a5e0986247110210bf08f3f2e16d4316</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-04 06:57:59</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <input class="pivot" type="checkbox" id="pivot">
+  <h1 class="title">Responsive pivoting table</h1>
+  <h2 class="subtitle">Resize your screen to pivot the table</h2>
+
+  <label class="button" for="pivot">Pivot the table</label>
+  <table class="table is-bordered is-hoverable is-pivotable">
+    <tbody>
+      <tr>
+        <th>some</th>
+        <td>a</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>values</th>
+        <td>b</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>to</th>
+        <td>c</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>play</th>
+        <td>d</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th>with</th>
+        <td>e</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>3b7c0c90dbb2f510b1eb9027c59619cd</instance_id>
+        <instance_name>dev223728</instance_name>
+        <name>sp_widget_a5e0986247110210bf08f3f2e16d4316</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;/* Colors */
+$color-active-bg: #08a;
+$color-active-text: #fff;
+$color-heading-bg: #6ac;
+$color-heading-text: #fff;
+
+/* Breakpoints */
+$break-small: 480px;
+
+/* States */
+.active {
+  background: $color-active-bg;
+  color: $color-active-text;
+}
+
+/* Make the table pivot */
+@mixin pivot() {
+  flex-direction: column;
+}
+
+table.table {
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+table.table tbody {
+  flex: 1;
+}
+
+table.table thead,
+table.table tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+table.table thead tr,
+table.table tbody tr {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+table.table thead th {
+  background: $color-heading-bg;
+  color: $color-heading-text;
+}
+
+table.table thead th,
+table.table tbody td {
+  flex: 1;
+}
+
+/* Interactions */
+input.pivot {
+  display: none; /* hide the checkbox */
+}
+
+input.pivot:checked + .button {
+  background: $color-active-bg;
+  color: $color-active-text;
+}
+
+input.pivot:checked ~ table.is-pivotable,
+input.pivot:checked ~ * &amp;gt; table.is-pivotable /* allow nesting */ {
+  @include pivot();
+  thead, tbody {
+    flex-direction: row;
+  }
+  tr {
+    flex-direction: column;
+  }
+  th, td {
+    transform-origin: top left;
+  }
+}
+
+/* Pivot on mobile */
+@media screen and (max-width: $break-small) {
+  table.table {
+    @include pivot();
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Pivot Chart Widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-04 03:31:49&lt;/sys_created_on&gt;&lt;sys_id&gt;a5e0986247110210bf08f3f2e16d4316&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;Pivot Chart Widget&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a5e0986247110210bf08f3f2e16d4316&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-04 06:57:59&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container"&gt;
+  &lt;input class="pivot" type="checkbox" id="pivot"&gt;
+  &lt;h1 class="title"&gt;Responsive pivoting table&lt;/h1&gt;
+  &lt;h2 class="subtitle"&gt;Resize your screen to pivot the table&lt;/h2&gt;
+
+  &lt;label class="button" for="pivot"&gt;Pivot the table&lt;/label&gt;
+  &lt;table class="table is-bordered is-hoverable is-pivotable"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th&gt;some&lt;/th&gt;
+        &lt;td&gt;a&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;values&lt;/th&gt;
+        &lt;td&gt;b&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;to&lt;/th&gt;
+        &lt;td&gt;c&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;play&lt;/th&gt;
+        &lt;td&gt;d&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;with&lt;/th&gt;
+        &lt;td&gt;e&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1824202043</payload_hash>
+        <record_name>Pivot Chart Widget</record_name>
+        <reverted_from/>
+        <source>4448498e47050210bf08f3f2e16d43b9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-04 06:57:59</sys_created_on>
+        <sys_id>c0b109e247150210bf08f3f2e16d4303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ea7e669e40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-04 06:57:59</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>88b109e212150210a133dce1e7dd2c02</update_guid>
+        <update_guid_history>88b109e212150210a133dce1e7dd2c02:-1824202043,87a1c5e2db150210d3bab1f1977253fc:1687931683,86a1c5e2561502100330058a9df63ba3:958788037,94a185e22115021071abae6962a71039:-262757789,479185e2fe150210fa0206bf23803c33:-1276441723,159185e2c8150210f3f90ffb3e4c1d2d:1900473882,9581c56a7e910210dd73cb3a2ab1b505:-716399882,9471cd2a5b910210d2326c7beeee6a6c:314870903,6b51cd2ee4d1021083b325ce464565f1:158974444,7226a46aca9102105cab23d6059fc4fe:-405584856,d7b5e42aa891021045451358fb985411:-565877851,f7a5246aaf9102102405bc4cbc7965af:1975174667,ac95242ac0910210f41956edf088c5d9:-565877851,6685a82a059102108570b45879af8678:2112169321,9435686a1a51021094352dcc43018dcc:-565877851,9ad4a42a6f910210384ace06c8ecb448:-663004323,31b4a42a2c91021000b543b0db3bf510:970898563,00a4642aaf910210ea3f8e7b24aaa388:-322889986,ed94642a7691021075c2321f0aa09d81:970898563,0784a06a1e5102103cc8bb99a039d190:-1212593138,6084242a119102101b506c68759a27b8:992419044,57746c6a325102109a4de86d365d8c41:-322889986,4964a02a9b9102102365a802014c47ba:970898563,3dd3a8e6d0910210e5c6083e331860cd:-663004323,8fc368e6e59102101f399e4ae58a69f2:-1845153268,81e45c6a6a5102101b460bfdebb8393a:-663004323,57d410a68d510210afd89dfc86a88660:-723059691,81a4586a2151021067e8d1f9f936f3c2:2079679788,b594906a6951021082558ec51d8e4644:-579966712,6784d46a445102101dcaeb28c29d95c5:2079679788,1082586e93110210acc6e94b3731c90f:-1198075671</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Pivot Chart Widget">bef1dd2647550210bf08f3f2e16d43bf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-04 08:09:10</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>39a757660e6a465182dd81a3abba67b1</sys_id>
+        <sys_metadata>a5e0986247110210bf08f3f2e16d4316</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pivot Chart Widget</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sp_widget_a5e0986247110210bf08f3f2e16d4316</sys_update_name>
+        <sys_update_version display_value="sp_widget_a5e0986247110210bf08f3f2e16d4316">c0b109e247150210bf08f3f2e16d4303</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-04 08:09:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

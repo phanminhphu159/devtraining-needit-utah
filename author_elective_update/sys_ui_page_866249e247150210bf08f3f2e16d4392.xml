@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_58872_needit_Pivot Chart Dashboard UI Page.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<style>
+		#preview-critical{
+			text-align: center;
+		}
+	</style>
+
+    <div id="preview-critical">     
+       <iframe height="1000" width="100%" scrolling="no" src="/$sp?id=pivot_chart_dashboard_page" />
+    </div>
+</j:jelly>]]></html>
+        <name>Pivot Chart Dashboard UI Page</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-04 07:05:27</sys_created_on>
+        <sys_id>866249e247150210bf08f3f2e16d4392</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Pivot Chart Dashboard UI Page</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_page_866249e247150210bf08f3f2e16d4392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-04 07:14:26</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>3b7c0c90dbb2f510b1eb9027c59619cd</instance_id>
+        <instance_name>dev223728</instance_name>
+        <name>sys_ui_page_866249e247150210bf08f3f2e16d4392</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script/&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_58872_needit_Pivot Chart Dashboard UI Page.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+&lt;style&gt;
+		#preview-critical{
+			text-align: center;
+		}
+	&lt;/style&gt;
+
+    &lt;div id="preview-critical"&gt;     
+       &lt;iframe height="1000" width="100%" scrolling="no" src="/$sp?id=pivot_chart_dashboard_page" /&gt;
+    &lt;/div&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;Pivot Chart Dashboard UI Page&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-04 07:05:27&lt;/sys_created_on&gt;&lt;sys_id&gt;866249e247150210bf08f3f2e16d4392&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Pivot Chart Dashboard UI Page&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_866249e247150210bf08f3f2e16d4392&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-04 07:14:26&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>326023844</payload_hash>
+        <record_name>Pivot Chart Dashboard UI Page</record_name>
+        <reverted_from/>
+        <source>4448498e47050210bf08f3f2e16d43b9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-04 07:14:26</sys_created_on>
+        <sys_id>8175c5e647150210bf08f3f2e16d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ea7f57a810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-04 07:14:26</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>4975c5e628150210f23478435bf5f870</update_guid>
+        <update_guid_history>4975c5e628150210f23478435bf5f870:326023844,ed630566d2150210a2a4e6c82ce821c3:-949018042</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-04 08:11:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>546c4e27e6504c44a7bd81cf9bd04690</sys_id>
+        <sys_metadata>866249e247150210bf08f3f2e16d4392</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pivot Chart Dashboard UI Page</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_page_866249e247150210bf08f3f2e16d4392</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_866249e247150210bf08f3f2e16d4392">8175c5e647150210bf08f3f2e16d4371</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-04 08:11:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
